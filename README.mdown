@@ -1,7 +1,19 @@
 Boxee Sleep Timer
 ==================
 
-This little Python app will shutdown your Boxee Box at a given time.
+This little Python app will shutdown your Boxee/Boxee Box at a given time. Just select a device, set the time and hit activate.
+
+Please feel free to contact me / open a ticket if you have any feature request or find bugs.
+
+TODO
+=====
+* code cleanup
+* app settings
+* device history with on/offline status
+* multiple timers (daily, once, weekdays)
+* a nice UI (native OS X client)
+* native Android / iOS Apps
+
 
 Setup
 ===========
@@ -16,6 +28,7 @@ Setup
 3. Download a prebuilt package.
   * Windows: tbd
   * OS X: tbd
+
 
 Screenshot
 ==========

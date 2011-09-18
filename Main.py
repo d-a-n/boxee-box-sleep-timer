@@ -183,7 +183,7 @@ class BoxeeSleep( UI.mainWindow ):
 			
 			items = []
 			for i in self.devices:
-				items.append("%s:%s" % (i['ip'], i['port']))
+				items.append("%s %s:%s" % (i['name'], i['ip'], i['port']))
 			
 			self.device_selector.Enable( True )
 			self.device_selector.SetItems(items)
@@ -194,7 +194,7 @@ class BoxeeSleep( UI.mainWindow ):
 			if dev == 1:
 				self.statusBar.SetStatusText(" One device found")
 			else:
-				elf.statusBar.SetStatusText(" %d devices found" % dev)
+				self.statusBar.SetStatusText(" %d devices found" % dev)
 
 		self.workerDeviceFinder = None
 		

@@ -95,13 +95,18 @@ class BoxeeClient:
 		s.sendto(message, ("<broadcast>", self.port))
 		
 		devices = []
+		known_devices = []
 		
 		try:			
 			while True:		
 				data, address = s.recvfrom(1024)
-				resounse = self.handleResponse(address, data)
-				if resounse:
-					devices.append(resounse)
+				response = self.handleResponse(address, data)
+				
+				if response:
+					key = "%s:%s" % (response['ip'],response['port'])
+					if key not in known_devices:
+						known_devices.append(key)
+						devices.append(response)
 				
 		except socket.timeout:
 			print "timeout"
