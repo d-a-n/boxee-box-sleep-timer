@@ -16,3 +16,7 @@ Setup
 3. Download a prebuilt package.
   * Windows: tbd
   * OS X: tbd
+
+Screenshot
+==========
+<img src="https://github.com/d-a-n/boxee-box-sleep-timer/raw/master/assets/screenshot.png"/>
