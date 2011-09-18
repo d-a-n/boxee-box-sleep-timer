@@ -16,6 +16,7 @@ Please feel free to contact me / open a ticket if you have any feature request o
 
 ## TODO
 
+* replace HTTP API with the new JSON_RPC (http://developer.boxee.tv/JSON_RPC)
 * code cleanup
 * app settings
 * device history with on/offline status
